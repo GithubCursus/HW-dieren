@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap-CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
+        <style type="text/css">
+            body {
+                padding-top: 56px; /* Zorg ervoor dat de inhoud niet onder de navbar valt */
+            }
+
+            /* Verhoog de ruimte boven de knoppen */
+            .navbar-nav {
+                display: none; /* Verberg de oude knoppen */
+            }
+
+            .row {
+                background-color: #9797FF; /* Achtergrondkleur voor de row rondom de afbeelding */
+                border-radius: 5px;
+                padding: 20px;
+            }
+
+            /* Knoppen in het midden van de pagina */
+            .button-container {
+                display: flex;
+                justify-content: center; /* Dit zorgt ervoor dat de knoppen gecentreerd zijn */
+                gap: 10px; /* Tussenruimte tussen knoppen */
+                margin-top: 50px; /* Ruimte boven de knoppen */
+            }
+
+            footer {
+                min-height: 100px;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .img {
+                width: 100%; /* Zorg ervoor dat de afbeelding de volledige breedte vult */
+                height: auto; /* Behoud de verhoudingen van de afbeelding */
+                object-fit: cover;
+            }
+
+            .container-sm {
+                padding-top: 30px; /* Verhoog de ruimte boven de tekst */
+            }
+
+            .font-weight-bold-custom {
+                font-weight: 700;
+            }
+
+            .btn-lila {
+                background-color: #C8A2C8; /* Lila kleur voor de knoppen */
+                color: red; /* Rode tekstkleur */
+                border: 2px solid yellow; /* Gele rand voor de knoppen */
+                transition: background-color 0.3s, color 0.3s; /* Overgangseffect voor de knoppen */
+            }
+
+            /* Hover effect voor de knoppen */
+            .btn-lila:hover {
+                background-color: yellow; /* Gele achtergrond bij hover */
+                color: darkred; /* Donkerrode tekst bij hover */
+            }
+        </style>
+        <title>Mijn pagina</title>
+        <link rel="shortcut icon" href="Afbeeldingen/favicon.ico" type="image/x-icon"/>
+    </head>
+    <body class="d-flex flex-column h-100 text-center text-white bg-dark">
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark w-100 fixed-top">
+                <div class="container-fluid">
+                    <div class="d-flex align-items-center">
+        
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+        
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <!-- Verwijder de navbar knoppen hier -->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Container voor de knoppen, gecentreerd boven de tekst -->
+        <div class="button-container">
+            <a class="btn btn-lila btn-lg" href="index.html">Home</a>
+            <a class="btn btn-lila btn-lg" href="overmij.html">Over mij</a>
+            <a class="btn btn-lila btn-lg" href="contact.html">Contact</a>
+        </div>
+
+        <!-- Tekst over mij en de afbeelding -->
+        <div class="container-sm flex-grow-1">
+            <p><h3 class="text-danger">Hier een beschrijving over mijn leven en mijn hobbies.</h3></p>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-4">
+                    <img class="img img-thumbnail" src="Afbeeldingen/Marge Simpson.jpg" alt="Marge Simpson">
+                    
+                    <h5 class="text-danger">Hallo</h5>
+                    <p class="text-danger font-weight-bold-custom">
+                        Mijn naam is Marge Simpson en ik werk thuis.
+                        Mijn hobbies zijn mijn kinderen, uitgaan en koken. <br>
+                        Ik woon samen met mijn man Homer en 3 kinderen in Springfield.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <p class="mb-0">&copy; 2025 Bep GvH. Alle rechten voorbehouden.</p>
+            </div>
+        </footer>
+
+        <!-- Bootstrap-JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
