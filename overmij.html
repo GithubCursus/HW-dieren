@@ -8,29 +8,43 @@
         rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
         crossorigin="anonymous">
-        <style type="text/css">
+         <style type="text/css">
             body {
-                padding-top: 56px; /* Zorg ervoor dat de inhoud niet onder de navbar valt */
+                padding-top: 56px; /* Zorgt ervoor dat de inhoud niet onder de navbar valt */
             }
 
-            /* Verhoog de ruimte boven de knoppen */
-            .navbar-nav {
-                display: none; /* Verberg de oude knoppen */
-            }
-
-            .row {
-                background-color: #9797FF; /* Achtergrondkleur voor de row rondom de afbeelding */
-                border-radius: 5px;
-                padding: 20px;
-            }
-
-            /* Knoppen in het midden van de pagina */
+            /* Container voor de knoppen, gecentreerd horizontaal */
             .button-container {
                 display: flex;
-                justify-content: center; /* Dit zorgt ervoor dat de knoppen gecentreerd zijn */
-                gap: 10px; /* Tussenruimte tussen knoppen */
-                margin-top: 50px; /* Ruimte boven de knoppen */
+                justify-content: center; /* Centreer de knoppen horizontaal */
+                gap: 10px; /* Ruimte tussen de knoppen */
+                margin-top: 100px; /* Ruimte tussen de knoppen en de rest van de inhoud */
             }
+
+            /* Stijlen voor de lila knoppen */
+            /* Stijlen voor de lila knoppen */
+.btn-lila {
+    background-color: #C8A2C8; /* Lila kleur voor de knoppen */
+    color: red; /* Rode tekstkleur */
+    border: 2px solid yellow; /* Gele rand voor de knoppen */
+    transition: background-color 0.3s, color 0.3s; /* Overgangseffect voor de knoppen */
+    padding: 10px 20px; /* Kleinere grootte van de knoppen */
+    font-size: 16px; /* Kleinere tekstgrootte */
+}
+
+/* Hover effect voor de knoppen */
+.btn-lila:hover {
+    background-color: yellow; /* Gele achtergrond bij hover */
+    color: darkred; /* Donkerrode tekst bij hover */
+}
+
+/* Media query om knoppen verder te verkleinen op kleinere schermen */
+@media (max-width: 768px) {
+    .btn-lila {
+        padding: 8px 16px; /* Kleinere knoppen voor kleinere schermen */
+        font-size: 12px; /* Kleinere tekstgrootte voor kleinere schermen */
+    }
+}
 
             footer {
                 min-height: 100px;
@@ -38,31 +52,21 @@
                 padding: 20px;
             }
 
-            .img {
-                width: 100%; /* Zorg ervoor dat de afbeelding de volledige breedte vult */
+            .img-thumbnail {
+                width: 80%; /* Verklein de afbeeldingen tot 80% van de breedte */
                 height: auto; /* Behoud de verhoudingen van de afbeelding */
-                object-fit: cover;
+                margin: 10px 0; /* Voeg wat marge toe tussen de afbeeldingen */
             }
 
-            .container-sm {
-                padding-top: 30px; /* Verhoog de ruimte boven de tekst */
+            .row {
+                background-color: #007bff;
+                border-radius: 5px;
+                padding: 30px;
+                margin-bottom: 30px;
             }
 
-            .font-weight-bold-custom {
-                font-weight: 700;
-            }
-
-            .btn-lila {
-                background-color: #C8A2C8; /* Lila kleur voor de knoppen */
-                color: red; /* Rode tekstkleur */
-                border: 2px solid yellow; /* Gele rand voor de knoppen */
-                transition: background-color 0.3s, color 0.3s; /* Overgangseffect voor de knoppen */
-            }
-
-            /* Hover effect voor de knoppen */
-            .btn-lila:hover {
-                background-color: yellow; /* Gele achtergrond bij hover */
-                color: darkred; /* Donkerrode tekst bij hover */
+            .navbar-nav {
+                display: none; /* Verberg de links in de navbar bovenaan */
             }
         </style>
         <title>Mijn pagina</title>
