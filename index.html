@@ -22,19 +22,29 @@
             }
 
             /* Stijlen voor de lila knoppen */
-            .btn-lila {
-                background-color: #C8A2C8; /* Lila kleur voor de knoppen */
-                color: red; /* Rode tekstkleur */
-                border: 2px solid yellow; /* Gele rand voor de knoppen */
-                transition: background-color 0.3s, color 0.3s; /* Overgangseffect voor de knoppen */
-                padding: 20px 40px; /* Grootte van de knoppen */
-            }
+            /* Stijlen voor de lila knoppen */
+.btn-lila {
+    background-color: #C8A2C8; /* Lila kleur voor de knoppen */
+    color: red; /* Rode tekstkleur */
+    border: 2px solid yellow; /* Gele rand voor de knoppen */
+    transition: background-color 0.3s, color 0.3s; /* Overgangseffect voor de knoppen */
+    padding: 10px 20px; /* Kleinere grootte van de knoppen */
+    font-size: 14px; /* Kleinere tekstgrootte */
+}
 
-            /* Hover effect voor de knoppen */
-            .btn-lila:hover {
-                background-color: yellow; /* Gele achtergrond bij hover */
-                color: darkred; /* Donkerrode tekst bij hover */
-            }
+/* Hover effect voor de knoppen */
+.btn-lila:hover {
+    background-color: yellow; /* Gele achtergrond bij hover */
+    color: darkred; /* Donkerrode tekst bij hover */
+}
+
+/* Media query om knoppen verder te verkleinen op kleinere schermen */
+@media (max-width: 768px) {
+    .btn-lila {
+        padding: 8px 16px; /* Kleinere knoppen voor kleinere schermen */
+        font-size: 12px; /* Kleinere tekstgrootte voor kleinere schermen */
+    }
+}
 
             footer {
                 min-height: 100px;
